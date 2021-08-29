@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>E-Course</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./imgs/e-course-logo.png" alt="" width="120" height="60" class="d-inline-block align-text-top"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <div class="sobre">
+                          <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dicas">
+                          <a class="nav-link active" href="#">Dicas</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid main-area">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="title">E-Course</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 center img-area">
+              <img src="./imgs/firstphoto.png">
+            </div>
+            <div class="col-12 center sobre-here">
+              <p class="title">Com o E-Course voce recebe informacoes, dicas e muito mais sobre cursos on-line. Aqui voce pode saber mais sobre qual curso fazer, se vale mesmo a pena fazer um curso digital, e saber qual curso se encaixa mais com seu perfil.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title">Videos com dicas:</h2>
+            </div>
+          </div>
+          <div class="row dicas-here">
+            <div class="col-12 col-sm-6 center">
+              <div class="card title">
+                <iframe src="https://www.youtube.com/embed/TknrbcaC1F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Vale a Pena Fazer CURSO ONLINE?</h5>
+                  <p class="card-text">Hoje em dia tudo muda tão rapidamente que é dificil se manter atualizado apenas com o que aprendemos na escola ou faculdade. Ainda bem que tem tanto CURSO ONLINE para fazer pela internet!</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 center">
+              <div class="card title">
+                <iframe src="https://www.youtube.com/embed/hL9aUmbPbjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">11 SITES PARA FAZER CURSOS ONLINE GRATUITOS COM CERTIFICADO NA QUARENTENA</h5>
+                  <p class="card-text">Durante esse seu tempo de home office, vale apostar nas formações online com certificado, que podem incrementar seu repertório e currículo ou servir como atividades complementares na faculdade.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid center title">
+            <div class="row">
+                <div class="col-12">
+                    <h5>ICEI PUC MINAS - Copyrigth - 2021</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div.sobre').click(function() {
+                $('html, body').animate({
+                    scrollTop: $("div.sobre-here").offset().top
+                }, 500)
+            })
+            $('div.dicas').click(function() {
+                $('html, body').animate({
+                    scrollTop: $("div.dicas-here").offset().top
+                }, 500)
+            })
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
