@@ -38,3 +38,43 @@ body {
     height: 100%;
     padding: 5%;
 }
+
+.sobre:hover {
+    background-color: rgb(40, 40, 41);
+}
+
+.dicas:hover {
+    background-color: rgb(40, 40, 41);
+}
+
+.videos {
+    margin-top: 2% !important;
+    transition: transform 1s;
+    transform: translateX(0) scale(1.0);
+}
+
+.animation-area {
+    animation: go-back 2s !important;
+}
+
+.videos:hover,
+.videos:focus {
+    transform: translateX(10px) scale(1.2);
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
