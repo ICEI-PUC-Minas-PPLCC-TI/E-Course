@@ -6,6 +6,19 @@ body {
     padding: 2%;
 }
 
+.footer-area {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    bottom: 0;
+    position: fixed;
+}
+
+.banner-area {
+    margin-bottom: 10%;
+    margin-top: 10% !important;
+}
+
 .title {
     margin-top: 2%;
     color: rgb(248, 252, 255);
